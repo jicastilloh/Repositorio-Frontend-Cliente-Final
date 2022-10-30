@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Ananda Personal Use';
+    src: url('../fonts/Ananda\ Personal\ Use.ttf');
+}
+
+.name-app{
+    font-family: 'Ananda Personal Use';
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.8);
+    -webkit-text-stroke: .3px rgb(29, 224, 150);
+}
+
+.nav-estilos{
+    background-color: rgb(224, 63, 29);
+}
+
+.botones-form{
+    box-shadow: 3px 3px 2px rgba(100, 100, 100, 0.5);
+    font-family: 'Home And Work';
+    src: url('../fonts/Home\ And\ Work.otf');
+    font-size: xx-large;
+    padding: 0px 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.log-in{
+    background-color: rgb(10, 148, 95);
+}
+
+.register{
+    background-color: rgb(29, 224, 150)
+}
+
+.principal{
+    width: 100vw;
+    height: 65vh;
+    background-color: rgb(224, 63, 29);
+    box-shadow: 10px 0px 8px rgb(0, 0, 0);
+}
+
+body{
+    background-color: rgb(10, 148, 95);
+}
+
+.imgManos{
+    width: 70%;
+}
+
+.logo{
+    width: 40%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+.centrar{
+    justify-content: center;
+}
+
+.titulo{
+    font-family: 'Home And Work';
+    src: url('../fonts/Home\ And\ Work.otf');
+    font-size: 90px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.8);
+    -webkit-text-stroke: 1px rgb(29, 224, 150);
+}
+
+.subtitulo{
+    font-family: 'Ananda Personal Use';
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+    margin-top: 10%;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.8);
+    -webkit-text-stroke: .3px rgb(59, 255, 180);
+}
