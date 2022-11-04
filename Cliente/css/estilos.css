@@ -75,3 +75,37 @@ body{
     text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.8);
     -webkit-text-stroke: .3px rgb(59, 255, 180);
 }
+
+@media (max-width: 576px) {
+    body{
+        
+        background-image: url("../img/backgroundCliente.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .imgManos{
+        display: none;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .titulo{
+        display: none;
+    }
+
+    .secundario{
+        display: none;
+    }
+
+    .principal{
+        display: none;
+    }
+
+    .nav-estilos{
+        height: 70vh;
+    }
+}
