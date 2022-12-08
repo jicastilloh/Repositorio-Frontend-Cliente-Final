@@ -10,27 +10,40 @@
     <link rel="shortcut icon" href="img/faviconLogo.ico" type="image/x-icon">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light nav-estilos">
-        <div class="container-fluid">
-            <a class="name-app" href="#">¡Deprisa!</a>
-            <form class="d-flex">
-                <input id="cUsuario" class="form-control me-2" type="text" placeholder="Usuario" id="prueba">
-                <input id="cClave" class="form-control me-4" type="password" placeholder="Contraseña">
-                <button id="cEnviar" class="btn btn-success me-2 botones-form log-in" type="button">Ingresar</button>
-                <button class="btn btn-success botones-form register" type="button">Registrarse</button>
-            </form>
-          </div>
-        </div>
-    </nav>
-    <div class="principal">
-        <div class="toast-container">
-            <div class="row">
-                <div class="col-6">
-                    <img class="imgManos" src="./img/imageManos.png" alt="imagenDeManos">
+
+    <div class="container-fluid">
+        <div class="row nav-estilos">
+            <div class="col-6">
+                <div class="mt-3 mb-3">
+                    <a class="name-app" href="#">¡Deprisa!</a>
                 </div>
-                <div class="col-6">
+            </div>
+
+            <div class="col">
+                <div class="mt-3 mb-3">
+                    <form class="d-flex">
+                        <input id="cUsuario" class="form-control me-2 estilos-form" type="text" placeholder="Usuario">
+                        <input id="cClave" class="form-control me-4 estilos-form" type="password" placeholder="Contraseña">
+                        <button id="cEnviar" class="btn btn-success me-2 botones-form log-in" type="button">Ingresar</button>
+                        <a href="./paginas/registrarse.html">
+                        <button class="btn btn-success botones-form register" type="button">Registrarse</button>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Principal -->
+    <div class="container-fluid">
+        <div class="row nav-estilos" style="box-shadow: 0px 4px 5px rgba(4, 4, 4, 0.451);">
+            <div class="col-6">
+                <img class="imgManos" src="./img/imageManos.png" alt="imagenDeManos">
+            </div>
+            <div class="col-6">
+                <div class="container">
                     <div class="row">
-                        <div class="col d-flex centrar">
+                        <div class="col-12 d-flex centrar">
                             <img class="logo m-5" src="./img/Logo.jpeg" alt="">
                         </div>
                     </div>
@@ -42,23 +55,17 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="secundario">
-        <div class="contianer">
-            <div class="row d-flex centrar">
-                <div class="col-6">
-
-                </div>
-                <div class="col-6 d-flex centrar">
-                    <h1 class="subtitulo">¡Comer saludable nunca fue tan fácil!</h1>
-                </div>
+        <!-- Secundario -->
+        <div class="row">
+            <div class="col d-flex centrar secundario-estilos">
+                <h1 class="subtitulo">¡Comer saludable nunca fue tan fácil!</h1>
             </div>
         </div>
     </div>
+    </div>
 
 
-    <script src="js/controlador.js"></script>
-    <script src="js/validator.js"></script>
+    <script src="js/validator-controlador.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>   
