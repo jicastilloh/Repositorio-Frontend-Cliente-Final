@@ -2,8 +2,6 @@
 
 document.getElementById('cEnviar').addEventListener('click', function(e){
 
-    console.log('Ingresando');
-
     const http = new XMLHttpRequest();
     const url = `http://127.0.0.1:3000/clientes`;
     
@@ -24,6 +22,7 @@ document.getElementById('cEnviar').addEventListener('click', function(e){
             let valorDeUsuario;
             let valorDeClave;
 
+            
             // Recorriendo el arreglo de los usuarios en la base de datos para saber si está registrado
             for(let i = 0; i < respuestaClientes.length; i++){
                 valorDeUsuario = respuestaClientes[i].nameUser;
@@ -31,16 +30,13 @@ document.getElementById('cEnviar').addEventListener('click', function(e){
                 
                 if(valorDeUsuario == obtenerUsuario && valorDeClave == obtenerClave){
                     console.log("Usuario Correcto");
-                    
+                
+
                     // Enviando al usuario a la página de inicio
                     window.location.href = '../paginas/inicio.html'
+
                     break;
                     
-                }else{
-
-                    console.log('Usuario no existe')
-                    alert('El usuario no existe')
-
                 }
             }
 
@@ -52,3 +48,4 @@ document.getElementById('cEnviar').addEventListener('click', function(e){
     http.send()
 
 });
+
