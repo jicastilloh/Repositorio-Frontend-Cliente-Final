@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Ananda Personal Use';
+    src: url('../fonts/Ananda\ Personal\ Use.ttf');
+}
+
+.titulo-des{
+    font-family: 'Ananda Personal Use';
+    color: black;
+}
+
 html{
     height: 100%;
 }
@@ -77,4 +87,8 @@ footer button{
 .fondo-estilo{
     background-color: rgb(000, 000, 000);
     border-radius: 5px;
+}
+
+.tamanio-text{
+    font-size: small;
 }

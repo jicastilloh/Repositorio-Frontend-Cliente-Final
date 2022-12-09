@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INICIO</title>
+    <title>¡Deprisa!</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/estilos-opciones.css">
@@ -14,7 +14,7 @@
 
     <nav class="navbar nav-estilos">
         <div class="container-fluid justify-content-center">
-            <a class="navbar-brand mr-0 name-app" href="#">Deprisa</a>
+            <a class="navbar-brand mr-0 name-app" href="#">¡Deprisa!</a>
         </div>
     </nav>
 
@@ -45,29 +45,105 @@
             <div class="col-md-6 col-sm-12 mb-3">
                 <h2 class="text-center estilo-texto">Desayunos</h2>
                 <div class="fondo-estilo">
-                    <button class="btn estilo-tamanio add-fondo1">
+                    <button id="verMenuDesayuno" data-bs-toggle="modal" data-bs-target="#desayunoMenuModal" class="btn estilo-tamanio add-fondo1">
                     </button>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12 mb-3">
                 <h2 class="text-center estilo-texto">Almuerzos</h2>
                 <div class="fondo-estilo">
-                    <button class="btn estilo-tamanio add-fondo2">
+                    <button id="verMenuAlmuerzo" data-bs-toggle="modal" data-bs-target="#almuerzoMenuModal" class="btn estilo-tamanio add-fondo2">
                     </button>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12 mb-3">
                 <h2 class="text-center estilo-texto">Cenas</h2>
                 <div class="fondo-estilo">
-                    <button class="btn estilo-tamanio add-fondo3">
+                    <button id="verMenuCena" data-bs-toggle="modal" data-bs-target="#cenaMenuModal" class="btn estilo-tamanio add-fondo3">
                     </button>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12 mb-3">
                 <h2 class="text-center estilo-texto">Bebidas</h2>
                 <div class="fondo-estilo">
-                    <button class="btn estilo-tamanio add-fondo4">
+                    <button id="verMenuBebida" data-bs-toggle="modal" data-bs-target="#bebidaMenuModal" class="btn estilo-tamanio add-fondo4">
                     </button>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- Modal Mostrar Desayunos -->
+    <div class="modal fade" id="desayunoMenuModal" tabindex="-1" aria-labelledby="desayunoMenuModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-1 titulo-des" id="desayunoMenuModalLabel">Menú Desayunos</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="viendoDesayunos" class="modal-body">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger tamanio-text" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-success tamanio-text">Enviar Pedido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Mostrar Almuerzos -->
+    <div class="modal fade" id="almuerzoMenuModal" tabindex="-1" aria-labelledby="almuerzoMenuModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-1 titulo-des" id="almuerzoMenuModalLabel">Menú Almuerzos</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="viendoAlmuerzos" class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger tamanio-text" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-success tamanio-text">Enviar Pedido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Mostrar Cenas -->
+    <div class="modal fade" id="cenaMenuModal" tabindex="-1" aria-labelledby="cenaMenuModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-1 titulo-des" id="cenaMenuModalLabel">Menú Cenas</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="viendoCenas" class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger tamanio-text" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-success tamanio-text">Enviar Pedido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Mostrar Bebidas -->
+    <div class="modal fade" id="bebidaMenuModal" tabindex="-1" aria-labelledby="bebidaMenuModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-1 titulo-des" id="bebidaMenuModalLabel">Menú Bebidas</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="viendoBebidas" class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger tamanio-text" data-bs-dismiss="modal">Cerrar</button>
+                    <button id="send-pedido-bebida" type="button" class="btn btn-success tamanio-text">Enviar Pedido</button>
                 </div>
             </div>
         </div>
@@ -88,6 +164,11 @@
         </div>
     </footer>
 
+
+    <script src="../js/comidas-cliente/desayunos-cliente-controlador.js"></script>
+    <script src="../js/comidas-cliente/almuerzos-cliente-controlador.js"></script>
+    <script src="../js/comidas-cliente/cenas-cliente-controlador.js"></script>
+    <script src="../js/comidas-cliente/bebidas-cliente-controlador.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
